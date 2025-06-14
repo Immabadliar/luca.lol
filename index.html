@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>T O R</title>
+  <link rel="icon" type="image/jpeg" href="mypfp.jpg" />
+  <title>lucaa.lol</title>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
 
@@ -16,7 +17,7 @@
     html, body {
       height: 100%;
       font-family: 'Poppins', sans-serif;
-      background: #; /* You had an incomplete background value */
+      background: #0a0a0a;
       color: #e1e1e6;
       display: flex;
       justify-content: center;
@@ -119,6 +120,7 @@
       justify-content: center;
       transition: all 0.3s ease;
       filter: drop-shadow(0 0 5px white);
+      position: relative;
     }
 
     .badge img {
@@ -192,11 +194,7 @@
 
   <main class="profile-card">
     <div class="avatar-wrapper">
-      <img
-        class="avatar"
-        src="mypfp.jpg"
-        alt="Profile"
-      />
+      <img class="avatar" src="mypfp.jpg" alt="Profile" />
       <div class="status-badge" title="Online">
         <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="6"/></svg>
       </div>
@@ -234,11 +232,9 @@
     </nav>
   </main>
 
-  <!-- Script to enable audio on first user click -->
   <script>
     window.addEventListener('DOMContentLoaded', () => {
       const audio = document.getElementById('background-audio');
-
       const enableAudio = () => {
         audio.muted = false;
         audio.volume = 0.5;
@@ -247,7 +243,6 @@
         });
         document.removeEventListener('click', enableAudio);
       };
-
       document.addEventListener('click', enableAudio);
     });
   </script>
